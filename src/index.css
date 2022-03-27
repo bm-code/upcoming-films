@@ -1,0 +1,61 @@
+/* root */
+
+:root {
+  --main-color: #23222b;
+  --p-color: #6e6e6e;
+  --details-color: #716f80;
+  --blue-sky: #74a9f6;
+}
+
+/* Reset */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img{
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+  background-color: #fafafd;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h1,h2,h3,h4,h5,h6{font-weight: 600;color: var(--main-color); margin-bottom: .3em;}
+
+@media screen and (max-width:640px){
+  h1{font-size: 26px;}
+  h2{font-size: 22px;}
+}
+
+p{color: var(--p-color); margin-bottom: .5em; line-height: 1.55em;}
+
+a{color: var(--blue-sky); text-decoration: none;}
+
+button{
+  padding: .7em 1em;
+  font-size: 16px;
+  color: white;
+  background-color: var(--blue-sky);
+  font-weight: 600;
+  border: 2px solid var(--blue-sky);
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+button:hover{
+  background-color: white;
+  color: var(--blue-sky);
+}

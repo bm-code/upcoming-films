@@ -1,0 +1,27 @@
+.home-title{
+    text-align: center;
+    margin-top: 2em;
+}
+
+.movie-list{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 2em auto;
+}
+
+.pagination__list{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    color: var(--p-color);
+}
+
+.pagination__list >li{
+    margin: 1.5em .3em;
+    cursor: pointer;
+}
+
+.pagination__list >li.active{
+    color: var(--blue-sky);
+}

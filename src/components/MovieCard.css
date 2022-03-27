@@ -1,0 +1,67 @@
+/* MovieCard */
+
+.movie-card{
+    margin: 2em auto;
+    justify-content: space-evenly;
+    flex: 0 0 20%;
+    padding: 0 .5em;
+}
+
+.movie-card__content{
+    flex: 0 0 30%;
+    width: 300px;
+    margin: auto;
+    padding: 2em;
+    padding-top: 250px;
+    margin-top: -250px;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0 0 29px rgba(0, 0, 0, 0.171);
+}
+
+.movie-card__img > img{
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.171);
+     width: 250px;
+     margin: auto;
+     border-radius: 10px;
+     position: relative;
+     z-index: 9;
+     transition: transform 0.2s;
+    }
+
+.movie-card__info{
+    padding-top: 1em;
+    margin: auto;
+}
+
+.movie-card__details{
+    display: flex;
+    justify-content: space-between;
+    padding: .5em 0;
+    color:var(--details-color);
+}
+
+.movie-card__details-date, .movie-card__info-rate{color:var(--details-color);}
+
+.movie-card__link-container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: .5em;
+}
+
+.movie-card__link{
+    background-color: transparent;
+    color: var(--blue-sky);
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+
+/* Cards Hover */
+
+.movie-card__link:hover > .movie-card__img > img{
+    transform:scale(1.05);
+}

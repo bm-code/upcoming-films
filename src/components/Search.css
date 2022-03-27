@@ -1,0 +1,24 @@
+/* Search */
+
+.search-container{
+    display: flex;
+    justify-content: center;
+    margin: 2em auto;
+}
+
+
+
+.search__input{
+    margin: 1em;
+    padding: 1em;
+    border-radius: 6px;
+    outline: none;
+    border: 1px solid rgb(207, 207, 207);
+    font-size: 16px;
+    box-shadow: 0 0 0 rgb(207, 207, 207);
+}
+
+.search-input:hover{
+    border-color: rgba(207, 207, 207, 0.37);
+    box-shadow: 0 0 6px rgb(207, 207, 207);
+}

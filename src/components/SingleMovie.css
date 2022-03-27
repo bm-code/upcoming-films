@@ -1,0 +1,132 @@
+/* Single Movie */
+
+.single-movie__cover{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.single-movie__cover > img{
+    filter: brightness(90%);
+    width: 100%;
+}
+
+.single-movie__content{
+    background-color: white;
+    margin-top: 45%;
+    padding: 1em;
+    border-radius: 15px 15px 0 0;
+}
+
+.single-movie__content-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.single-movie__content-header-img{
+    flex: 0 0 35%;
+    margin-top: -4.5em;
+}
+
+.single-movie__content-header-img > img{
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.171)
+}
+.single-movie__content-header-details{
+    flex: 0 0 60%;
+    align-self: center;
+}
+
+.single-movie__content-header-details > *{
+    margin-bottom: 1em;
+}
+
+.single-movie__content-genres{margin:1.5em 0}
+
+.single-movie__content-genres-list{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+.single-movie__content-genres-list > li{
+    color: white;
+    padding: .3em .6em;
+    background-color: var(--blue-sky);
+    border-radius: 30px;
+}
+
+.single-movie__content-synopsis ,.single-movie__content-cast , .single-movie__content-reviews{
+    margin: 2.5em 0;
+}
+
+.single-movie__content-cast > h2{
+    margin-bottom: 1em;
+}
+
+.single-movie__content-cast > ul{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+    color: var(--p-color);
+}
+
+.single-movie__content-cast > ul >li{
+    max-width: 130px;
+    margin: 2em 1.5em;
+    flex: 0 0 33%;
+}
+
+.single-movie__content-reviews {
+    font-size: 1.5em;
+    text-align: center;
+    font-style: italic;
+}
+
+@media screen and (min-width:576px){
+    .single-movie__content-header,
+    .single-movie__content-genres,
+    .single-movie__content-synopsis ,.single-movie__content-cast , .single-movie__content-reviews{
+        max-width: 540px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width:768px){
+    .single-movie__content{
+        border-radius: 20px 15px 0 0;
+        margin-top: 35%;
+    }
+    .single-movie__content-header,
+    .single-movie__content-genres,
+    .single-movie__content-synopsis ,.single-movie__content-cast , .single-movie__content-reviews{
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width:992px){
+    .single-movie__content{
+        border-radius: 25px 15px 0 0;
+        margin-top: 30%;
+    }
+
+    .single-movie__content-header,
+    .single-movie__content-genres,
+    .single-movie__content-synopsis ,.single-movie__content-cast , .single-movie__content-reviews{
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width:992px){
+    .single-movie__content{
+        margin-top: 25%;
+    }
+}
