@@ -5,6 +5,6 @@ function useFetch(url, setState) {
         fetch(url)
             .then(response => response.json())
             .then(data => setState(data.results))
-    }, [url])
+    }, [url, setState])
 }
 export { useFetch };
