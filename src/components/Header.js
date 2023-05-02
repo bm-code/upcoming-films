@@ -1,4 +1,4 @@
-import { BrowserRouter, NavLink, Route, Routes, useLocation } from 'react-router-dom';
+import { BrowserRouter, NavLink, Route, Routes } from 'react-router-dom';
 import Home from '../pages/Home';
 import Error from '../pages/Error';
 import logo from '../img/logo.svg'
@@ -20,7 +20,6 @@ export default function Header({ movieID }) {
                     <NavLink to="/" className={(navData) => navData.isActive ? "active header__link" : " header__link"}>Ver todos los estrenos</NavLink>
                 </div>
             </div>
-
 
             <Routes>
                 <Route exact path="/" element={<Home />} />

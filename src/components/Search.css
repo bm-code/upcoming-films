@@ -1,6 +1,6 @@
 /* Search */
 
-.search-container{
+.search-container {
     display: flex;
     justify-content: center;
     margin: 2em auto;
@@ -8,7 +8,7 @@
 
 
 
-.search__input{
+.search__input {
     margin: 1em;
     padding: 1em;
     border-radius: 6px;
@@ -18,7 +18,11 @@
     box-shadow: 0 0 0 rgb(207, 207, 207);
 }
 
-.search-input:hover{
+.search-input:hover {
     border-color: rgba(207, 207, 207, 0.37);
     box-shadow: 0 0 6px rgb(207, 207, 207);
+}
+
+.search-terms {
+    text-align: center;
 }

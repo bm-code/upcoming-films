@@ -19,6 +19,7 @@ export default function Home() {
 
     return (
         <div className="main">
+            <Search movieList={movieList} setMovieList={setMovieList} />
             <h1 className="home-title">Últimos estrenos</h1>
             {/* <Search setMovieList={setMovieList} movieList={movieList} /> */}
             <div className="movie-list">
